@@ -1,4 +1,4 @@
-const quizStateModule = require('./quiz-state.js');
+const kvStore = require('./kv-store');
 const questions = require('../data/questions.json');
 
 function calculateCorrectCount(questionIds, answers) {
@@ -49,20 +49,28 @@ module.exports = async (req, res) => {
         return res.status(405).json({ message: 'Method not allowed' });
     }
 
-    const { answers, questionIds } = req.body;
+    try {
+        const { answers, questionIds } = req.body || {};
 
-    const quizState = quizStateModule.quizState;
-    if (quizState.state !== 'live') {
-        return res.status(400).json({ message: 'Quiz has ended' });
+        const quizState = await kvStore.getQuizState();
+        if (quizState.state !== 'live') {
+            return res.status(400).json({ message: 'Quiz has ended' });
+        }
+
+        const validation = calculateCorrectCount(questionIds, answers);
+
+        if (!validation.valid) {
+            return res.status(400).json({ message: validation.message });
+        }
+
+        return res.status(200).json({
+            correctCount: validation.correctCount
+        });
+    } catch (error) {
+        console.error('[validate] Validation failed:', error);
+        return res.status(500).json({
+            message: 'Failed to validate answers',
+            detail: error.message
+        });
     }
-
-    const validation = calculateCorrectCount(questionIds, answers);
-
-    if (!validation.valid) {
-        return res.status(400).json({ message: validation.message });
-    }
-
-    return res.status(200).json({
-        correctCount: validation.correctCount
-    });
 };

@@ -2,38 +2,40 @@
 
 This project is a static frontend with serverless API endpoints under /api.
 
-**Important**: This project now uses Vercel KV (Redis storage) to persist quiz state across serverless function invocations. Without KV configured, the quiz will not work on Vercel.
+**Important**: This project uses Redis (Upstash) to persist quiz state across serverless function invocations. Without a database configured, the API falls back to per-instance in-memory storage: the site loads without errors, but state can be lost between requests and deployments.
 
 ## What you need
 - A Vercel account
 - Vercel CLI (optional) or the Vercel web UI
 - ADMIN_PASSWORD environment variable set in Vercel
-- **Vercel KV database (required for state persistence)**
+- **Upstash Redis database (required for state persistence)**
 
-## Step 1: Set up Vercel KV Storage
+## Step 1: Set up Redis Storage
 
 ### Option A: Using Vercel Dashboard (Recommended)
 1. Go to your Vercel project dashboard
 2. Navigate to the **Storage** tab
-3. Click **Create Database**
-4. Select **KV (Redis)** or **Upstash Redis** from the marketplace
-5. Follow the prompts to create a new KV store
-6. Vercel will automatically add the required environment variables (KV_REST_API_URL, KV_REST_API_TOKEN, etc.)
+3. Click **Create Database** (or **Marketplace** → **Upstash Redis**)
+4. Create a Redis database and connect it to this project
+5. Vercel injects the REST credentials automatically. Depending on which integration you pick they are named either:
+   - `KV_REST_API_URL` / `KV_REST_API_TOKEN`, or
+   - `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN`
+
+Either pair works — the API reads both.
 
 ### Option B: Using Vercel CLI
 ```bash
-vercel link  # Link to your project
-vercel storage create kv  # Create a new KV store
+vercel link           # Link to your project
+vercel env pull       # Sync env vars locally (optional)
 ```
 
 ## Step 2: Required Environment Variables
-## Step 2: Required Environment Variables
 - **ADMIN_PASSWORD**: admin password used by /api/quiz-state for admin actions
-- **KV_REST_API_URL**: Automatically set when you create a KV store
-- **KV_REST_API_TOKEN**: Automatically set when you create a KV store
-- **KV_REST_API_READ_ONLY_TOKEN**: Automatically set when you create a KV store
+- **KV_REST_API_URL** / **KV_REST_API_TOKEN**, or **UPSTASH_REDIS_REST_URL** / **UPSTASH_REDIS_REST_TOKEN**: automatically set when you connect a Redis store
 
-> **Note**: The KV environment variables are automatically configured when you create a KV store through Vercel. You only need to manually set ADMIN_PASSWORD.
+> **Note**: The storage environment variables are automatically configured when you connect a database through Vercel. You only need to manually set ADMIN_PASSWORD.
+>
+> Check `/api/debug` after deploying: `kvStorage.configured` should be `true`. If it is `false`, the database is not connected to the project yet.
 
 ## Step 3: Deploy with Vercel Web UI
 1) Push the repo to GitHub (or GitLab/Bitbucket).
@@ -61,17 +63,17 @@ vercel storage create kv  # Create a new KV store
 
 ### "Quiz has ended" error when submitting
 This usually means:
-1. **KV store not configured**: Make sure you've created a KV store in Vercel and the environment variables are set.
-2. **State not syncing**: Each serverless function must be able to read/write to the same KV store.
+1. **Redis store not configured**: Make sure you've connected a Redis database in Vercel. Visit `/api/debug` and confirm `kvStorage.configured` is `true`.
+2. **State not syncing**: Each serverless function must be able to read/write to the same Redis store. If `configured` is `false`, requests fall back to in-memory storage and state is not shared.
+
+### API returns 500 with a JSON error
+The response body now includes a `detail` field with the underlying storage error. Common causes are invalid/expired Redis credentials or a database that was deleted while still connected to the project.
 
 ### Vercel KV deprecated warning
-Vercel KV has been moved to Upstash Redis integration. If you see a deprecation warning:
-1. Go to your Vercel project → **Integrations**
-2. Look for **Upstash Redis** (your existing KV store should have migrated automatically)
-3. Or install a new Redis integration from the Vercel Marketplace
+Vercel KV has been moved to Upstash Redis. This project no longer depends on the deprecated `@vercel/kv` package; it talks to the Upstash REST API directly and supports both the old `KV_*` and new `UPSTASH_*` variable names.
 
 ## Notes
-- **State is now persistent**: Quiz state, leaderboard, and winner count are stored in Vercel KV (Redis) and persist across cold starts and redeploys.
+- **State is now persistent**: Quiz state, leaderboard, and winner count are stored in Redis (Vercel KV / Upstash) and persist across cold starts and redeploys.
 - The API routes are deployed as serverless functions (Vercel does this automatically for /api/*.js with the provided vercel.json).
 - Local development still uses in-memory state via `server.js`, which is fine for testing.
 

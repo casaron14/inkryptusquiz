@@ -1,4 +1,4 @@
-// Persistent storage using Vercel KV
+// Persistent storage using Vercel KV / Upstash Redis
 const kvStore = require('./kv-store');
 
 module.exports = async (req, res) => {
@@ -15,11 +15,19 @@ module.exports = async (req, res) => {
         return res.status(405).json({ message: 'Method not allowed' });
     }
 
-    const quizState = await kvStore.getQuizState();
+    try {
+        const quizState = await kvStore.getQuizState();
 
-    return res.status(200).json({
-        leaderboard: quizState.leaderboard,
-        winnerCount: quizState.winnerCount,
-        quizState: quizState.state
-    });
+        return res.status(200).json({
+            leaderboard: quizState.leaderboard,
+            winnerCount: quizState.winnerCount,
+            quizState: quizState.state
+        });
+    } catch (error) {
+        console.error('[leaderboard] Failed to load leaderboard:', error);
+        return res.status(500).json({
+            message: 'Failed to load leaderboard',
+            detail: error.message
+        });
+    }
 };
