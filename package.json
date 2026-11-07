@@ -3,8 +3,7 @@
     "version": "1.0.0",
     "description": "Lightweight quiz platform for live seminars",
     "scripts": {
-        "dev": "node server.js",
-        "start": "node server.js",
+        "dev": "node dev-server.js",
         "deploy": "vercel --prod"
     },
     "keywords": [

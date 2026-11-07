@@ -75,11 +75,11 @@ Vercel KV has been moved to Upstash Redis. This project no longer depends on the
 ## Notes
 - **State is now persistent**: Quiz state, leaderboard, and winner count are stored in Redis (Vercel KV / Upstash) and persist across cold starts and redeploys.
 - The API routes are deployed as serverless functions (Vercel does this automatically for /api/*.js with the provided vercel.json).
-- Local development still uses in-memory state via `server.js`, which is fine for testing.
+- Local development still uses in-memory state via `dev-server.js`, which is fine for testing.
 
 ## File map (local vs production)
 ### Local-only
-- `server.js` (Express dev server for local testing)
+- `dev-server.js` (Express dev server for local testing)
 - `.env` (local secrets; not committed)
 - `.env.example` (reference for local env vars)
 
