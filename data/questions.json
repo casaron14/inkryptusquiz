@@ -1,404 +1,404 @@
 {
   "questions": [
     {
-      "question": "Lengo kuu la Inkryptus kama mradi wenye matumizi ni nini?",
+      "question": "Blockchain ni nini kwa maelezo sahihi?",
       "options": [
-        "Kutengeneza tokeni kwa ajili ya speculation ya bei",
-        "Kujenga mfumo wa kiuchumi wenye matumizi halisi ndani ya ecosystem",
-        "Kutoa zawadi za mining peke yake",
-        "Kuwa sarafu ya malipo ya ada za serikali"
-      ],
-      "correctAnswer": 1
-    },
-    {
-      "question": "Ni nini kinachofanya INKY kuwa utility token badala ya speculative token?",
-      "options": [
-        "Inatumika ndani ya huduma na miamala katika mfumo",
-        "Bei yake hubadilika kila siku",
-        "Inaweza kununuliwa kwenye exchange",
-        "Ina fixed supply"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "question": "Nguzo gani ya msingi ya blockchain inalinda miamala ya Inkryptus?",
-      "options": [
-        "Mamlaka",
-        "Uhakiki wa mkono",
-        "Usalama wa kicryptographic",
-        "Kumbukumbu za karatasi"
+        "Sarafu ya kidijitali",
+        "Programu ya benki",
+        "Miundombinu ya kurekodi na kuthibitisha data",
+        "Mtandao wa kijamii"
       ],
       "correctAnswer": 2
     },
     {
-      "question": "Ikiwa tokeni haina matumizi ndani ya mfumo, hatari kubwa zaidi ni nini?",
+      "question": "Je, blockchain na cryptocurrency ni kitu kimoja?",
       "options": [
-        "Ongezeko la watumiaji",
-        "Kutegemea hype peke yake",
-        "Kupungua kwa volatility",
-        "Kuboresha matumizi"
+        "Ndiyo, ni sawa kabisa",
+        "Ndiyo, kwenye mitandao yote",
+        "Hapana, blockchain ni tokeni",
+        "Hapana, blockchain ni miundombinu"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 3
     },
     {
-      "question": "Kwa nini tokenomics ya Inkryptus inapaswa kueleweka?",
+      "question": "Leja zilizosambazwa (distributed ledgers) zinaweza kusaidia nini?",
       "options": [
-        "Kujua rangi ya nembo",
-        "Kujua ofisi zilipo",
-        "Kuelewa mzunguko wa thamani ndani ya ecosystem",
-        "Kuelewa historia ya blockchain"
+        "Kuficha miamala yote",
+        "Kuondoa udhibiti wote",
+        "Kuhakikisha faida",
+        "Uwazi na ukaguzi"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 3
     },
     {
-      "question": "Supply inayodhibitiwa ya tokeni husaidia nini?",
+      "question": "Blockchain haihakikishi nini?",
       "options": [
-        "Kuzuia uhaba",
-        "Kupunguza matumizi",
-        "Kudhibiti mfumuko wa tokeni",
-        "Kuongeza mining"
-      ],
-      "correctAnswer": 2
-    },
-    {
-      "question": "Kati ya yafuatayo, ni ipi nguzo ya blockchain?",
-      "options": [
-        "Decentralization",
-        "Udhibiti wa mfumuko wa bei wa serikali",
-        "Dhamana ya benki",
-        "Locked Vault"
+        "Faida ya uwekezaji",
+        "Kurekodi data",
+        "Kuthibitisha miamala",
+        "Kuhifadhi rekodi"
       ],
       "correctAnswer": 0
     },
     {
-      "question": "Thamani ya tokeni ya matumizi kama INKY hutoka wapi hasa?",
+      "question": "Mitandao tofauti ya blockchain hutofautiana kwa nini?",
       "options": [
-        "Tweets za watumiaji",
-        "Matumizi halisi ndani ya mfumo",
-        "Udanganyifu wa muda mfupi",
-        "Hype wa soko"
-      ],
-      "correctAnswer": 1
-    },
-    {
-      "question": "Kwa nini Decentralization ni muhimu kwa Inkryptus?",
-      "options": [
-        "Kuruhusu mtu mmoja kudhibiti mfumo",
-        "Kuondoa uwazi",
-        "Kuimarisha uwazi na kupunguza udhibiti wa pointi moja",
-        "Kuongeza ada"
+        "Hakuna tofauti",
+        "Jina la nembo pekee",
+        "Mifumo ya uaminifu na utawala",
+        "Rangi ya tovuti"
       ],
       "correctAnswer": 2
     },
     {
-      "question": "Ikiwa hakuna mahitaji ya matumizi ya INKY, nini huathiriwa kwanza?",
+      "question": "Kauli \"Hakuna anayedhibiti blockchain\" ina ukweli gani?",
       "options": [
-        "Nembo ya mradi",
-        "Mtazamo wa matumizi ya tokeni",
-        "Muundo wa karatasi nyeupe",
-        "Jina la kikoa"
+        "Ni kweli kwa kila mtandao",
+        "Udhibiti hutofautiana kwa mtandao",
+        "Serikali pekee inadhibiti",
+        "Kampuni moja inadhibiti zote"
       ],
       "correctAnswer": 1
     },
     {
-      "question": "Uwazi katika blockchain unamaanisha nini?",
+      "question": "Mtandao uliogatuliwa (decentralized) unaweza kuhifadhi nini?",
       "options": [
-        "Miamala inaweza kufuatiliwa hadharani",
-        "Msimamizi anaweza kufuta miamala",
-        "Data huhifadhiwa kwenye kompyuta moja ndogo",
-        "Tokeni huchapishwa kwa siri"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "question": "Kwa mwekezaji makini, swali muhimu zaidi kuhusu Inkryptus ni nini?",
-      "options": [
-        "Bei itaongezeka lini?",
-        "Msomeshaji gani anazungumza kuhusu hilo?",
-        "Tatizo gani la kiuchumi linalotatuliwa?",
-        "Ina wafuasi wangapi?"
+        "Tokeni zilizogatuliwa pekee",
+        "Sarafu za serikali pekee",
+        "Tokeni zinazosimamiwa kitovu",
+        "Hakuna tokeni"
       ],
       "correctAnswer": 2
     },
     {
-      "question": "Tokeni ya matumizi yenye matumizi mengi huathiriaje thamani?",
+      "question": "Kuhusu crypto kutofuatiliwa, lipi ni sahihi?",
       "options": [
-        "Inaongeza uwezekano wa mahitaji endelevu",
-        "Inaondoa msongo kabisa",
-        "Inaondoa uwepo wa soko",
-        "Inaongeza mfumuko wa sarafu ya kawaida"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "question": "Utaratibu wa makubaliano wa blockchain husaidia nini?",
-      "options": [
-        "Kupamba mtandao",
-        "Kuthibitisha miamala bila mamlaka kuu",
-        "Kupunguza nodi",
-        "Kuhifadhi data nje ya mtandao"
-      ],
-      "correctAnswer": 1
-    },
-    {
-      "question": "Tofauti kuu kati ya tokeni ya matumizi na tokeni ya meme ni nini?",
-      "options": [
-        "Matumizi yana matumizi halisi",
-        "Meme ina blockchain yake",
-        "Matumizi hayana ugavi",
-        "Meme haina msongo"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "question": "Ikiwa mfumo ikolojia wa Inkryptus unapanuka, nini huongezeka kwa mantiki?",
-      "options": [
-        "Ugavi usio na udhibiti",
-        "Matumizi ya tokeni",
-        "Udhibiti wa kati",
-        "Mikataba ya karatasi"
-      ],
-      "correctAnswer": 1
-    },
-    {
-      "question": "Uhaba katika tokenomics unahusiana na nini?",
-      "options": [
-        "Ukosefu wa matumizi",
-        "Ugavi unaodhibitiwa wa tokeni",
-        "Kupungua kwa nodi",
-        "Ongezeko la wasimamizi"
-      ],
-      "correctAnswer": 1
-    },
-    {
-      "question": "Hatari ya kuwekeza bila kuelewa matumizi ni nini?",
-      "options": [
-        "Faida za haraka",
-        "Kutegemea hisia badala ya mantiki",
-        "Ongezeko la utofauti",
-        "Kupungua kwa hatari"
-      ],
-      "correctAnswer": 1
-    },
-    {
-      "question": "Blockchain bila uwazi inaweza kusababisha nini?",
-      "options": [
-        "Imani thabiti zaidi",
-        "Kupungua kwa uwajibikaji",
-        "Ongezeko la Decentralization",
-        "Msongo mdogo"
-      ],
-      "correctAnswer": 1
-    },
-    {
-      "question": "Matumizi ya INKY ndani ya mfumo yanamaanisha nini kwa mzunguko wa thamani?",
-      "options": [
-        "Thamani inabaki bila mwendo",
-        "Hakuna athari",
-        "Inazalisha mahitaji ya ndani",
-        "Inategemea benki"
+        "Haiwezi kufuatiliwa kamwe",
+        "Hakuna miamala inayoonekana",
+        "Miamala mingi ya umma inaonekana",
+        "Majina yote yamefichwa kabisa"
       ],
       "correctAnswer": 2
     },
     {
-      "question": "Je, mradi unaweza kuwa na teknolojia ya blockchain lakini kukosa matumizi ya maana?",
+      "question": "Ukamilifu wa muamala (finality) hutegemea nini?",
       "options": [
-        "Ndiyo",
-        "Hapana",
-        "Haiwezekani",
-        "Blockchain hutoa matumizi kiotomatiki"
+        "Makubaliano na utawala wa mtandao",
+        "Bei ya tokeni",
+        "Idadi ya wallet",
+        "Muda wa siku"
       ],
       "correctAnswer": 0
     },
     {
-      "question": "Kati ya yafuatayo, ni kipi kinaonyesha matumizi halisi?",
+      "question": "Je, crypto iko nje ya udhibiti wa sheria?",
       "options": [
-        "Kununua na kushikilia tokeni bila matumizi",
-        "Kutumia tokeni kulipa huduma ndani ya mfumo",
-        "Bei kuongezeka kwa siku moja",
-        "Kupata mapendekezo ya mitandao ya kijamii"
-      ],
-      "correctAnswer": 1
-    },
-    {
-      "question": "Ikiwa tokeni inachapishwa bila kikomo, kawaida nini hutokea?",
-      "options": [
-        "Uhaba unaongezeka",
-        "Mfumuko wa tokeni",
-        "Mahitaji yanaimarisha",
-        "Msongo huondoka"
-      ],
-      "correctAnswer": 1
-    },
-    {
-      "question": "Kwa nini uwazi wa miamala ni muhimu kwa wawekezaji wa Inkryptus?",
-      "options": [
-        "Kuficha data",
-        "Kuimarisha imani",
-        "Kupunguza nodi",
-        "Kuzuia matumizi"
-      ],
-      "correctAnswer": 1
-    },
-    {
-      "question": "Mahitaji ya ndani ya mfumo ikolojia hutegemea zaidi nini?",
-      "options": [
-        "Udanganyifu wa nje",
-        "Matumizi halisi ya tokeni",
-        "Uvumi",
-        "Biashara ya nasibu"
-      ],
-      "correctAnswer": 1
-    },
-    {
-      "question": "Je, matumizi peke yake yanatosha bila upitishaji?",
-      "options": [
-        "Ndiyo",
-        "Hapana",
-        "Daima",
-        "Kiotomatiki"
-      ],
-      "correctAnswer": 1
-    },
-    {
-      "question": "Nguzo tatu kuu za blockchain mara nyingi zinajumuisha nini?",
-      "options": [
-        "Decentralization, Uwazi, Usalama",
-        "Uchimbaji, Uchapishaji, Uchomaji",
-        "Benki, Kukopa, Kuweka akiba",
-        "Biashara, Kupandisha, Kushuka"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "question": "Thamani endelevu ya INKY inategemea nini?",
-      "options": [
-        "Matumizi ya muda mfupi",
-        "Matumizi ya muda mrefu na upitishaji",
-        "Uvumi",
-        "Mipiko ya udanganyifu"
-      ],
-      "correctAnswer": 1
-    },
-    {
-      "question": "Ikiwa mfumo umewekwa katikati, nini hupungua?",
-      "options": [
-        "Udhibiti wa mtu mmoja",
-        "Uwazi wazi",
-        "Uwezo wa kuingilia kati",
-        "Udhibiti wa msimamizi"
-      ],
-      "correctAnswer": 1
-    },
-    {
-      "question": "Kwa nini tokenomics ni muhimu zaidi kuliko hype?",
-      "options": [
-        "Hype hudumu milele",
-        "Tokenomics inaonyesha mantiki ya kiuchumi",
-        "Hype hupunguza hatari",
-        "Tokenomics haina athari"
-      ],
-      "correctAnswer": 1
-    },
-    {
-      "question": "Kati ya yafuatayo, ni ipi ishara ya mradi dhaifu?",
-      "options": [
-        "Matumizi wazi",
-        "Karatasi nyeupe yenye mantiki",
-        "Kutegemea matangazo peke yake",
-        "Uwazi wa miamala"
+        "Ndiyo, kabisa",
+        "Ndiyo, kwa nchi zote",
+        "Hapana, mamlaka zinaweza kudhibiti",
+        "Ndiyo, kwa exchanges pekee"
       ],
       "correctAnswer": 2
     },
     {
-      "question": "Mzunguko wa thamani katika Inkryptus unahitaji nini?",
+      "question": "Blockchain inaweza kusaidia nini kwenye ugavi wa bidhaa?",
       "options": [
-        "Matumizi endelevu ya tokeni",
-        "Udanganyifu peke yake",
-        "Mamlaka kuu",
-        "Uchapishaji usio na kikomo"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "question": "Je, bei ya tokeni ni sawa na matumizi yake?",
-      "options": [
-        "Ndiyo",
-        "Daima",
-        "Hapana",
-        "Kiotomatiki"
-      ],
-      "correctAnswer": 2
-    },
-    {
-      "question": "Tokeni ya matumizi yenye mahitaji ya ndani huathiriaje soko?",
-      "options": [
-        "Inaimarisha msingi wa thamani",
-        "Inaondoa biashara",
-        "Inaondoa ugavi",
-        "Inaondoa blockchain"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "question": "Kabla ya kuwekeza, hatua ya busara ni nini?",
-      "options": [
-        "Fuata umati",
-        "Soma tokenomics na matumizi",
-        "Subiri hype",
-        "Amini uvumi"
+        "Kupunguza bei ya mafuta",
+        "Ufuatiliaji na uthibitishaji",
+        "Kuongeza kasi ya meli",
+        "Kuondoa ada za forodha"
       ],
       "correctAnswer": 1
     },
     {
-      "question": "Je, Decentralization inamaanisha hakuna sheria?",
+      "question": "Smart contract ni nini?",
       "options": [
-        "Ndiyo",
-        "Daima",
-        "Hapana",
-        "Kiotomatiki"
+        "Mkataba wa karatasi",
+        "Aina ya wallet",
+        "Simu ya kisasa",
+        "Makubaliano yanayoweza kupangwa"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 3
     },
     {
-      "question": "Ikiwa Inkryptus ina matumizi mengi, nini kinatokea kwa mtazamo wa thamani?",
+      "question": "Programu inaweza kutumia crypto ya mtandao bila kufanya nini?",
       "options": [
-        "Inaimarisha",
-        "Inatoweka",
-        "Inabaki vivyo hivyo",
-        "Inaondolewa"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "question": "Udanganyifu bila matumizi ni kama nini?",
-      "options": [
-        "Uwekezaji wenye mantiki",
-        "Msingi thabiti",
-        "Hatari isiyotabirika",
-        "Upitishaji endelevu"
-      ],
-      "correctAnswer": 2
-    },
-    {
-      "question": "Je, matumizi yanaweza kusaidia kupunguza utegemezi kwa hype?",
-      "options": [
-        "Hapana",
-        "Ndiyo",
-        "Haiwezekani",
-        "Si muhimu"
+        "Kutumia wallet",
+        "Kutoa tokeni mpya ya mradi",
+        "Kulipa ada",
+        "Kuwa na watumiaji"
       ],
       "correctAnswer": 1
     },
     {
-      "question": "Kipimo cha mwisho cha mradi wa matumizi kama Inkryptus ni nini?",
+      "question": "BTC hutumika zaidi kama nini?",
       "options": [
+        "Hifadhi ya thamani na uhamisho",
+        "Ada ya gesi pekee",
+        "Sarafu thabiti",
+        "Zawadi za mchezo"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "USDT na USDC zinalenga nini?",
+      "options": [
+        "Kupanda bei haraka",
+        "Utulivu wa bei",
+        "Kulipa gesi",
+        "Staking pekee"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "ETH hutumika kulipia nini kwenye mtandao wake?",
+      "options": [
+        "Gesi (gas)",
+        "Matangazo",
+        "Bima",
+        "Kodi"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Kabla ya kujiunga na fursa ya crypto, angalia nini?",
+      "options": [
+        "Umaarufu mtandaoni",
+        "Ahadi za faida",
+        "Idadi ya wafuasi",
+        "Matumizi, ada, uwezo wa kutoka na hatari"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Kupata fursa ya crypto kunamaanisha nini kuhusu faida?",
+      "options": [
+        "Si uthibitisho wa faida",
+        "Faida imehakikishwa",
+        "Faida ni kubwa",
+        "Hakuna hatari"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Inkryptus ni mfumo wa aina gani?",
+      "options": [
+        "Benki kuu ya kidijitali",
+        "Mtandao wa kijamii",
+        "Wallet ya hybrid-finance kwenye BNB Smart Chain",
+        "Soko la magari"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Huduma gani ziko kwenye mfumo wa Inkryptus?",
+      "options": [
+        "Mikopo ya nyumba",
+        "Wallet, swaps, staking na Arena",
+        "Mauzo ya simu",
+        "Usafirishaji wa mizigo"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "INKY hufanya nini kwenye mfumo?",
+      "options": [
+        "Huzuia miamala yote",
+        "Hubadilisha sheria za mtandao",
+        "Huchapisha matangazo",
+        "Huunganisha shughuli na motisha"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Ni nini kitenganishwe na ahadi za matangazo?",
+      "options": [
+        "Jina la mradi",
+        "Matumizi halisi ya bidhaa",
+        "Rangi ya nembo",
+        "Idadi ya wafuasi"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Kiwango cha juu cha ugavi wa INKY ni kipi?",
+      "options": [
+        "20,000,000",
+        "2,000,000,000",
+        "200,000,000",
+        "100,000,000"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Kiwango cha juu cha ugavi kinatofautiana na nini?",
+      "options": [
+        "Ugavi unaozunguka na utoaji wa kila siku",
+        "Bei na ada pekee",
+        "Idadi ya wallet",
+        "Idadi ya watumiaji"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Mgawanyo unaopendekezwa wa \"5% / 95%\" unahitaji nini?",
+      "options": [
+        "Kuaminiwa tu",
+        "Uthibitisho wa chanzo cha msingi",
+        "Matangazo zaidi",
+        "Kura za umma"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Bei ya soko huamuliwa na nini?",
+      "options": [
+        "Mwanzilishi pekee",
         "Idadi ya matangazo",
-        "Bei ya muda mfupi",
-        "Matumizi halisi na upitishaji",
-        "Nembo na chapa"
+        "Biashara na ukwasi",
+        "Serikali"
       ],
       "correctAnswer": 2
+    },
+    {
+      "question": "Thamani ya kiuchumi inategemea nini?",
+      "options": [
+        "Bei ya jana pekee",
+        "Idadi ya wafuasi",
+        "Rangi ya nembo",
+        "Matumizi, mahitaji na uendelevu"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Zawadi za tokeni ulizopokea ni nini?",
+      "options": [
+        "Pesa taslimu",
+        "Tokeni, si faida ya pesa kiotomatiki",
+        "Faida iliyohakikishwa",
+        "Hisa za kampuni"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Mapato halisi ya kuuza tokeni hutegemea nini?",
+      "options": [
+        "Jina la tokeni",
+        "Bei ya mauzo, slippage na ada",
+        "Idadi ya marafiki",
+        "Tarehe ya kuzaliwa"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "100 INKY × $1.50 = $150 ni nini?",
+      "options": [
+        "Pesa taslimu ya uhakika",
+        "Faida ya mwaka",
+        "Ada ya mtandao",
+        "Thamani iliyonukuliwa, si pesa ya uhakika"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Tokenomics hudhibiti nini?",
+      "options": [
+        "Mgawanyo, si faida ya baadaye",
+        "Bei ya baadaye",
+        "Nguvu ya ununuzi ya baadaye",
+        "Faida iliyohakikishwa"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Bei ya juu kabisa ya INKY kwenye CoinMarketCap ilikuwa ipi?",
+      "options": [
+        "$1.56",
+        "$0.9134",
+        "$1.98",
+        "$2.50"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Bei ya chini kabisa ya INKY kwenye CoinMarketCap ilikuwa ipi?",
+      "options": [
+        "$1.98",
+        "$1.56",
+        "$0.9134",
+        "$0.50"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Historia ya bei pekee haiwezi kuthibitisha nini?",
+      "options": [
+        "Bei ya jana",
+        "Tarehe ya biashara",
+        "Kiasi kilichouzwa",
+        "Uhalali wala uchumi imara"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Unapochunguza mradi, angalia nini?",
+      "options": [
+        "Ukaguzi huru, ugavi, ukwasi na watumiaji",
+        "Idadi ya matangazo",
+        "Ahadi za mwanzilishi",
+        "Umaarufu mtandaoni"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Kulinganisha mapato ya bei kunahitaji nini?",
+      "options": [
+        "Tarehe na mbinu zilezile",
+        "Bei ya juu pekee",
+        "Mali maarufu pekee",
+        "Maoni ya marafiki"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Mgawanyo wa staking hufuata nini?",
+      "options": [
+        "Matakwa ya mtumiaji",
+        "Bahati nasibu",
+        "Bei ya siku",
+        "Kanuni na ukomo uliowekwa"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Arena huunganisha nini?",
+      "options": [
+        "Benki na mikopo",
+        "Michezo na motisha za tokeni",
+        "Usafirishaji na ugavi",
+        "Elimu na vyeti"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Je, utoaji uliopangwa wa tokeni unahakikisha mapato?",
+      "options": [
+        "Ndiyo, daima",
+        "Ndiyo, kwa staking pekee",
+        "Ndiyo, ndani ya mwaka",
+        "Hapana, mapato halisi hayahakikishiwi"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Kauli mbiu ya masterclass ni ipi?",
+      "options": [
+        "Mantiki kuliko hype",
+        "Haraka kuliko hype",
+        "Hype kuliko mantiki",
+        "Faida kuliko yote"
+      ],
+      "correctAnswer": 0
     }
   ]
 }

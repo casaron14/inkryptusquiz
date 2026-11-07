@@ -4,7 +4,8 @@
     "description": "Lightweight quiz platform for live seminars",
     "scripts": {
         "dev": "node dev-server.js",
-        "deploy": "vercel --prod"
+        "deploy": "vercel --prod",
+        "validate:questions": "node scripts/validate-questions.js"
     },
     "keywords": [
         "quiz",
