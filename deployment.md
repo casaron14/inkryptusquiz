@@ -66,6 +66,15 @@ This usually means:
 1. **Redis store not configured**: Make sure you've connected a Redis database in Vercel. Visit `/api/debug` and confirm `kvStorage.configured` is `true`.
 2. **State not syncing**: Each serverless function must be able to read/write to the same Redis store. If `configured` is `false`, requests fall back to in-memory storage and state is not shared.
 
+### Build fails with "No entrypoint found"
+Vercel is trying to deploy the project as an Express/Node server and is looking for `app.js`, `index.js`, or `server.js`. This project is a static site with functions under `api/`; it is not an Express app on Vercel (`dev-server.js` is local-only).
+
+Fix this by either:
+- Setting **Framework Preset** to **Other** in the Vercel project settings, or
+- Keeping the explicit `builds` array in `vercel.json`, which overrides the framework preset.
+
+The `routes` entry in `vercel.json` is also required with `builds`: it maps extensionless URLs such as `/api/quiz-state` to the built function at `/api/quiz-state.js`.
+
 ### API returns 500 with a JSON error
 The response body now includes a `detail` field with the underlying storage error. Common causes are invalid/expired Redis credentials or a database that was deleted while still connected to the project.
 
