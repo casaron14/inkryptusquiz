@@ -73,6 +73,7 @@
         // ==================== STATE ====================
         let adminPassword = '';
         let currentQuizState = 'inactive';
+        let pollTimer = null;
 
         // ==================== DOM ELEMENTS ====================
         const elements = {
@@ -95,20 +96,33 @@
         }
 
         // ==================== LOGIN ====================
-        elements.loginForm.addEventListener('submit', (e) => {
+        elements.loginForm.addEventListener('submit', async (e) => {
             e.preventDefault();
             adminPassword = elements.password.value;
 
-            // Verify password works by checking quiz state
-            checkQuizState().then(success => {
-                if (success) {
+            const submitBtn = elements.loginForm.querySelector('button[type="submit"]');
+            submitBtn.disabled = true;
+
+            try {
+                // Verify password works by checking quiz state
+                const result = await checkQuizState();
+
+                if (result.ok) {
                     showView('admin');
                     loadAdminData();
-                } else {
+                } else if (result.status === 401) {
                     alert('Invalid password');
                     elements.password.value = '';
+                } else {
+                    alert(
+                        'Cannot connect to the quiz server.\n\n' +
+                        (result.message || 'The API is unreachable or returned an unexpected response.') +
+                        '\n\nIf this is a fresh deployment, make sure the API routes are configured correctly.'
+                    );
                 }
-            });
+            } finally {
+                submitBtn.disabled = false;
+            }
         });
 
         // ==================== QUIZ STATE ====================
@@ -120,14 +134,30 @@
                     }
                 });
 
-                if (!response.ok) return false;
+                if (response.status === 401) {
+                    return { ok: false, status: 401, message: 'Unauthorized' };
+                }
 
-                const data = await response.json();
+                if (!response.ok) {
+                    return {
+                        ok: false,
+                        status: response.status,
+                        message: `Server responded with ${response.status} ${response.statusText}`
+                    };
+                }
+
+                let data;
+                try {
+                    data = await response.json();
+                } catch (parseError) {
+                    return { ok: false, status: response.status, message: 'Server returned a non-JSON response' };
+                }
+
                 updateQuizStateDisplay(data.state);
-                return true;
+                return { ok: true, status: 200, data };
             } catch (error) {
                 console.error('Error checking quiz state:', error);
-                return false;
+                return { ok: false, status: 0, message: 'Network error: ' + error.message };
             }
         }
 
@@ -172,7 +202,12 @@
                     body: JSON.stringify({ action })
                 });
 
-                const data = await response.json();
+                let data = {};
+                try {
+                    data = await response.json();
+                } catch (parseError) {
+                    data = { message: `Server returned a non-JSON response (${response.status})` };
+                }
 
                 if (response.ok) {
                     updateQuizStateDisplay(data.state);
@@ -185,12 +220,15 @@
                     } else if (action === 'end') {
                         alert('✅ Quiz has ended. No more submissions accepted.');
                     }
+                } else if (response.status === 401) {
+                    alert('Your admin session is no longer valid. Please log in again.');
+                    showView('login');
                 } else {
-                    alert(data.message || 'Action failed');
+                    alert(data.message || `Action failed (${response.status})`);
                 }
             } catch (error) {
                 console.error('Error changing quiz state:', error);
-                alert('Failed to change quiz state');
+                alert('Cannot reach the quiz server. Please check your connection and try again.');
             }
         }
 
@@ -216,9 +254,21 @@
         async function updateLeaderboard() {
             try {
                 const response = await fetch('/api/leaderboard');
-                const data = await response.json();
 
-                displayLeaderboard(data.leaderboard, data.winnerCount);
+                if (!response.ok) {
+                    console.error('Leaderboard request failed:', response.status);
+                    return;
+                }
+
+                let data;
+                try {
+                    data = await response.json();
+                } catch (parseError) {
+                    console.error('Leaderboard returned a non-JSON response');
+                    return;
+                }
+
+                displayLeaderboard(data.leaderboard || [], data.winnerCount || 0);
 
                 // Check if auto-end occurred
                 if (data.winnerCount >= 5 && currentQuizState === 'live') {
@@ -278,8 +328,9 @@
             checkQuizState();
             updateLeaderboard();
 
-            // Poll every 3 seconds
-            setInterval(() => {
+            // Poll every 3 seconds (only ever one timer, even after re-login)
+            if (pollTimer) clearInterval(pollTimer);
+            pollTimer = setInterval(() => {
                 checkQuizState();
                 updateLeaderboard();
             }, 3000);

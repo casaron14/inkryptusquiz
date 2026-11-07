@@ -22,10 +22,10 @@
 
 | File | Change | Status |
 |------|--------|--------|
-| `package.json` | Added `dev` and `start` scripts | ✅ |
-| `vercel.json` | Already correct for serverless routing | ✅ |
+| `package.json` | Added `dev` script | ✅ |
+| `vercel.json` | Static assets + serverless API routing | ✅ |
 | `.env.example` | Added local env reference | ✅ |
-| `server.js` | New local Express server for dev testing | ✅ |
+| `dev-server.js` | Local Express server for dev testing (not deployed) | ✅ |
 | `README.md` | Added local run + Vercel deployment steps | ✅ |
 | `deployment.md` | Full deployment guide with file map | ✅ |
 | `.gitignore` | Already excludes `.env`, `node_modules` | ✅ |
