@@ -11,6 +11,56 @@
       "correctAnswer": 2
     },
     {
+      "question": "Blockchain ni teknolojia inayotumika kwa nini?",
+      "options": [
+        "Kuhifadhi na kushiriki kumbukumbu za data",
+        "Kuchapisha matangazo",
+        "Kuhariri picha",
+        "Kutuma ujumbe wa simu"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Kila \"block\" kwenye blockchain hurekodi nini?",
+      "options": [
+        "Picha za simu",
+        "Miamala iliyorekodiwa",
+        "Maudhui ya video",
+        "Michezo ya simu"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Cryptocurrency ni nini?",
+      "options": [
+        "Pesa ya karatasi",
+        "Kadi ya benki",
+        "Sarafu ya kidijitali inayotumia kriptografia",
+        "Aina ya akaunti ya benki"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Token kwenye crypto ni nini?",
+      "options": [
+        "Kadi ya benki",
+        "Kipande cha thamani cha kidijitali",
+        "Akaunti ya benki",
+        "Mkataba wa karatasi"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Neno \"decentralized\" linamaanisha nini?",
+      "options": [
+        "Kudhibitiwa na mtu mmoja",
+        "Kuwa kwenye kompyuta moja",
+        "Kufungwa kwa mtandao",
+        "Kusambazwa bila kitovu kimoja"
+      ],
+      "correctAnswer": 3
+    },
+    {
       "question": "Je, blockchain na cryptocurrency ni kitu kimoja?",
       "options": [
         "Ndiyo, ni sawa kabisa",
@@ -101,6 +151,46 @@
       "correctAnswer": 2
     },
     {
+      "question": "Nini maana ya ushauri \"DYOR\" kwenye crypto?",
+      "options": [
+        "Nunua haraka",
+        "Uza kila kitu",
+        "Subiri miaka mingi",
+        "Fanya utafiti wako mwenyewe"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Nini hatari ya kuwekeza pesa zote kwenye mradi mmoja wa crypto?",
+      "options": [
+        "Kupunguza hatari",
+        "Kuongeza usalama",
+        "Kupoteza pesa nyingi ikiwa mradi utashindwa",
+        "Kupata faida kila wakati"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Kwa nini private key ya wallet inapaswa kuwa siri?",
+      "options": [
+        "Ili ipate rangi",
+        "Ili iwe kubwa",
+        "Ili mtu asichukue fedha zako",
+        "Ili iweze kuimba"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Nini kinaweza kutokea ikiwa mtu atashiriki private key yake?",
+      "options": [
+        "Anapata faida",
+        "Anapata zawadi",
+        "Hakuna kinachotokea",
+        "Fedha zake zinaweza kuibiwa"
+      ],
+      "correctAnswer": 3
+    },
+    {
       "question": "Blockchain inaweza kusaidia nini kwenye ugavi wa bidhaa?",
       "options": [
         "Kupunguza bei ya mafuta",
@@ -161,6 +251,56 @@
       "correctAnswer": 0
     },
     {
+      "question": "Stablecoins kama USDT na USDC zina sifa gani?",
+      "options": [
+        "Zinapanda bei kila siku",
+        "Zina utulivu wa thamani",
+        "Hazina thamani",
+        "Hazitumiki kwenye exchanges"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Mfano wa stablecoin ni upi?",
+      "options": [
+        "BTC",
+        "ETH",
+        "USDT",
+        "INKY"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Gas fee kwenye blockchain ni nini?",
+      "options": [
+        "Ada ya kufanya muamala",
+        "Bei ya simu",
+        "Kodi ya nyumba",
+        "Ada ya mikopo ya benki"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Smart contract hufanya kazi gani?",
+      "options": [
+        "Hifadhi funguo za wallet",
+        "Chapisha tokeni mpya",
+        "Badilisha bei ya tokeni",
+        "Tekeleza makubaliano kiotomatiki"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Wallet ya crypto hutumika kwa nini?",
+      "options": [
+        "Kuhifadhi na kutuma crypto",
+        "Kuchapisha nyaraka",
+        "Kupima kasi ya intaneti",
+        "Kuhariri video"
+      ],
+      "correctAnswer": 0
+    },
+    {
       "question": "Kabla ya kujiunga na fursa ya crypto, angalia nini?",
       "options": [
         "Umaarufu mtandaoni",
@@ -209,6 +349,26 @@
         "Huunganisha shughuli na motisha"
       ],
       "correctAnswer": 3
+    },
+    {
+      "question": "Inkryptus inatumia blockchain gani?",
+      "options": [
+        "BNB Smart Chain",
+        "Bitcoin",
+        "Ethereum",
+        "Solana"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "INKY ni nini kwenye mfumo wa Inkryptus?",
+      "options": [
+        "Sarafu ya karatasi",
+        "Tokeni ya mfumo",
+        "Kadi ya benki",
+        "Akaunti ya benki"
+      ],
+      "correctAnswer": 1
     },
     {
       "question": "Ni nini kitenganishwe na ahadi za matangazo?",
@@ -311,6 +471,26 @@
       "correctAnswer": 0
     },
     {
+      "question": "Nini hufanya bei ya tokeni kupanda?",
+      "options": [
+        "Ugavi na mahitaji",
+        "Rangi ya nembo",
+        "Idadi ya marafiki",
+        "Jina la mwanzilishi"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Ugavi unaozunguka (circulating supply) ni nini?",
+      "options": [
+        "Tokeni zote zilizopo",
+        "Tokeni zinazopatikana sokoni kwa sasa",
+        "Bei ya tokeni",
+        "Ada ya mtandao"
+      ],
+      "correctAnswer": 1
+    },
+    {
       "question": "Bei ya juu kabisa ya INKY kwenye CoinMarketCap ilikuwa ipi?",
       "options": [
         "$1.56",
@@ -379,6 +559,26 @@
         "Elimu na vyeti"
       ],
       "correctAnswer": 1
+    },
+    {
+      "question": "Staking ni nini?",
+      "options": [
+        "Kubadilisha tokeni moja na nyingine",
+        "Kuchukua mkopo dhidi ya tokeni",
+        "Kuchapisha tokeni mpya",
+        "Kufunga tokeni ili kupata zawadi"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Sehemu ya michezo na motisha kwenye Inkryptus inaitwa nini?",
+      "options": [
+        "Wallet",
+        "Swaps",
+        "Arena",
+        "Staking"
+      ],
+      "correctAnswer": 2
     },
     {
       "question": "Je, utoaji uliopangwa wa tokeni unahakikisha mapato?",
